@@ -26,8 +26,8 @@ humans = [
 print("Starts with D:")
 a = []
 for i in range(len(humans)):
-    start, *rest = humans[i].name
-    if start == 'D':
+    x, *y = humans[i].name
+    if x == 'D':
         a.append(humans[i].name)
 print(a)
 
@@ -36,8 +36,8 @@ print(a)
 print("Ends with e:")
 b = []
 for i in range(len(humans)):
-    *rest, end = humans[i].name
-    if end == 'e':
+    *x, y = humans[i].name
+    if y == 'e':
         b.append(humans[i].name)
 print(b)
 
@@ -46,8 +46,8 @@ print(b)
 print("Starts between C and G, inclusive:")
 c = []
 for i in range(len(humans)):
-    start, *rest = humans[i].name
-    if start == 'C' or start == 'D' or start == 'E' or start =='F' or start == 'G':
+    x, *y = humans[i].name
+    if x == 'C' or x == 'D' or x == 'E' or x =='F' or x == 'G':
         c.append(humans[i].name)
 print(c)
 
